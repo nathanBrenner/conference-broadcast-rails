@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  post "conference", to: 'twilio#join_conference'
+  post "Conference/Join", to: 'twilio#join_conference'
   get "conference", to: 'twilio#conference'
   post "conference/connect", to: 'twilio#conference_connect'
   post "broadcast", to: 'twilio#broadcast'
